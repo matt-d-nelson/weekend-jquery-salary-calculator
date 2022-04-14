@@ -1,0 +1,115 @@
+body {
+    background-color: #f6deab;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #375A33;
+}
+
+h1 {
+    background-color: #A8E2A0;
+    border: 3px solid #C7A761;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 40px;
+    background-image: url('../img/celery.gif');
+    background-repeat: repeat-x;
+}
+
+h3 {
+    font-family: cursive;
+}
+
+.inputs {
+    float: left;
+    width: 20%;
+    line-height: 30px;
+    background-color: #A8E2A0;
+    background-image: url('../img/celery.gif');
+    background-repeat: repeat;
+    background-position: -6px;
+    border: 3px solid #C7A761;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 40px;
+}
+
+::placeholder {
+    color: #375A33;
+}
+
+input {
+    border: 2px solid #C7A761;
+    background-color: #f8e8c7;
+}
+
+button {
+    border: 2px solid #375A33;
+    background-color: #b0d8aa;
+    padding: 5px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    color: #375A33;
+}
+
+.outputs {
+    background-color: #A8E2A0;
+    border: 3px solid #C7A761;
+    background-image: url('../img/celery.gif');
+    background-repeat: repeat;
+    background-position-y: -15px;
+    float: right;
+    width: 60%;
+    margin-right: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+table {
+    position: inherit;
+    border: 2px solid #375A33;
+    border-collapse: collapse;
+    background-color: #A8E2A0;
+    margin: auto;
+}
+
+th {
+    border: 1px solid #375A33;
+    background-color: #aad5a5;
+    padding: 4px;
+    width: 100px;
+}
+
+td {
+    border: 1px solid #375A33;
+    background-color: #c4ebc0;
+    padding: 4px;
+    width: 100px;
+}
+
+.clear {
+    clear: both;
+}
+
+.totalCeleryOut {
+    background-color: #A8E2A0;
+    border: 3px solid #C7A761;
+    background-image: url('../img/celery.gif');
+    background-repeat: repeat-x;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+@keyframes fadeToRed {
+    from {background-color: #A8E2A0;}
+    to {background-color: #F03A47;}
+}
+
+@keyframes fadeToGreen {
+    from {background-color: #F03A47;}
+    to {background-color: #A8E2A0;}
+}

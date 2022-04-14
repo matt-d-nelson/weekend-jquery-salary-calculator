@@ -11,29 +11,37 @@
 </head>
 <body>
     <h1>Celery Calculator</h1>
-    <div id="inputs">
+    
+    <h3>We have great <em>stalk</em> options!</h3>
+    <div id="inputs" class="inputs">
         <h2>Add Employee</h2>
-        <input type="text" id="firstNameIn" placeholder="First Name">
-        <input type="text" id="lastNameIn" placeholder="Last Name">
-        <input type="number" id="idIn" placeholder="ID">
-        <input type="text" id="titleIn" placeholder="Title">
+        <input type="text" id="firstNameIn" placeholder="First Name"> <br>
+        <input type="text" id="lastNameIn" placeholder="Last Name"> <br>
+        <input type="number" id="idIn" placeholder="ID"> <br>
+        <input type="text" id="titleIn" placeholder="Title"> <br>
         <input type="number" id="celeryIn" placeholder="Annual Celery"> <br>
         <button id="submitButton">Submit</button>
     </div>
-    <h2>Employees</h2>
-    <div id="outputs">
-        <table id="outputTable">
-            <tr>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>ID</th>
-                <th>Title</th>
-                <th>Annual Celery</th>
-                <th></th>
-            </tr>
+    <div id="outputs" class="outputs">
+        <h2>Employees</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>ID</th>
+                    <th>Title</th>
+                    <th>Annual Celery</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="outputTable">
+
+            </tbody>
         </table>
-        <h2>Total Monthly: <span id="totalCeleryOut">0.00</span></h2>
     </div>
+    <div class="clear"></div>
+    <h2 id="totalCeleryOutAll" class="totalCeleryOut">Total Monthly Celery: <span id="totalCeleryOut">0.00</span> stalks</h2>
     
 </body>
 </html>
