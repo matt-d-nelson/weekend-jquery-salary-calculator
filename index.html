@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="vendors/jquery-3.6.0.min.js"></script>
+    <script src="scripts/client.js"></script>
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Celery Calculator</title>
+</head>
+<body>
+    <h1>Celery Calculator</h1>
+    <div id="inputs">
+        <h2>Add Employee</h2>
+        <input type="text" id="firstNameIn" placeholder="First Name">
+        <input type="text" id="lastNameIn" placeholder="Last Name">
+        <input type="number" id="idIn" placeholder="ID">
+        <input type="text" id="titleIn" placeholder="Title">
+        <input type="number" id="celeryIn" placeholder="Annual Celery"> <br>
+        <button id="submitButton">Submit</button>
+    </div>
+    <h2>Employees</h2>
+    <div id="outputs">
+        <table id="outputTable">
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>ID</th>
+                <th>Title</th>
+                <th>Annual Celery</th>
+                <th></th>
+            </tr>
+        </table>
+        <h2>Total Monthly: <span id="totalCeleryOut">0.00</span></h2>
+    </div>
+    
+</body>
+</html>
