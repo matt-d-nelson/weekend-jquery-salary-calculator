@@ -65,7 +65,8 @@ function displayEmployees(arrayToDisplay) {
     if(totalYearly/12 > 20000 && el.css('background-color') == 'rgb(168, 226, 160)') {
         el.css('animation-name', 'fadeToRed').css('animation-duration', '1s');
         el.css('background-color', '#F03A47');
-    } else {
+    }
+    if(totalYearly/12 <= 20000 && el.css('background-color') != 'rgb(168, 226, 160)') {
         el.css('animation-name', 'fadeToGreen').css('animation-duration', '1s');
         el.css('background-color', '#A8E2A0'); 
     }
