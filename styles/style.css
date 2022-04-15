@@ -1,13 +1,21 @@
+:root {
+    --lightGreen: #A8E2A0;
+    --darkTan: #C7A761;
+    --darkGreen: #375A33;
+  }
+
+
 body {
     background-color: #f6deab;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    color: #375A33;
+    color: var(--darkGreen);
 }
 
 h1 {
-    background-color: #A8E2A0;
-    border: 3px solid #C7A761;
+    background-color: var(--lightGreen);
+    border: 3px solid var(--darkTan);
+    text-shadow: 2px 2px var(--darkTan);
     padding-top: 30px;
     padding-bottom: 30px;
     margin-left: 40px;
@@ -15,6 +23,10 @@ h1 {
     margin-top: 40px;
     background-image: url('../img/celery.gif');
     background-repeat: repeat-x;
+}
+
+h2 {
+    text-shadow: 2px 2px var(--darkTan);
 }
 
 h3 {
@@ -25,22 +37,22 @@ h3 {
     float: left;
     width: 20%;
     line-height: 30px;
-    background-color: #A8E2A0;
+    background-color: var(--lightGreen);
     background-image: url('../img/celery.gif');
     background-repeat: repeat;
     background-position: -6px;
-    border: 3px solid #C7A761;
+    border: 3px solid var(--darkTan);
     padding-left: 20px;
     padding-right: 20px;
     margin-left: 40px;
 }
 
 ::placeholder {
-    color: #375A33;
+    color: var(--darkGreen);
 }
 
 input {
-    border: 2px solid #C7A761;
+    border: 2px solid var(--darkTan);
     background-color: #f8e8c7;
 }
 
@@ -54,8 +66,8 @@ button {
 }
 
 .outputs {
-    background-color: #A8E2A0;
-    border: 3px solid #C7A761;
+    background-color: var(--lightGreen);
+    border: 3px solid var(--darkTan);
     background-image: url('../img/celery.gif');
     background-repeat: repeat;
     background-position-y: -15px;
@@ -94,8 +106,8 @@ td {
 }
 
 .totalCeleryOut {
-    background-color: #A8E2A0;
-    border: 3px solid #C7A761;
+    background-color: var(--lightGreen);
+    border: 3px solid var(--darkTan);
     background-image: url('../img/celery.gif');
     background-repeat: repeat-x;
     padding-top: 35px;
@@ -105,11 +117,11 @@ td {
 }
 
 @keyframes fadeToRed {
-    from {background-color: #A8E2A0;}
+    from {background-color: var(--lightGreen);}
     to {background-color: #F03A47;}
 }
 
 @keyframes fadeToGreen {
     from {background-color: #F03A47;}
-    to {background-color: #A8E2A0;}
+    to {background-color: var(--lightGreen);}
 }

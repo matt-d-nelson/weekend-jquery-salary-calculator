@@ -15,7 +15,7 @@ function addEmployee() {
         firstName: $('#firstNameIn').val(),
         lastName: $('#lastNameIn').val(),
         id: $('#idIn').val(),
-        title: $('#idIn').val(),
+        title: $('#titleIn').val(),
         celery: $('#celeryIn').val()
     }
     //push new object to employees array
@@ -68,7 +68,7 @@ function displayEmployees(arrayToDisplay) {
     }
     if(totalYearly/12 <= 20000 && el.css('background-color') != 'rgb(168, 226, 160)') {
         el.css('animation-name', 'fadeToGreen').css('animation-duration', '1s');
-        el.css('background-color', '#A8E2A0'); 
+        el.css('background-color', '#A8E2A0');
     }
 }
 
