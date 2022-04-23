@@ -27,8 +27,12 @@ function addEmployee() {
 
 function deleteEmployee() {
     console.log('in delete employee');
-    //splice one index of employees at the 'index' data that was added in display employees
-    employees.splice($(this).data('index'),1);
+    //splice one index of employees at the 'index' data that was defined in display employees
+    for(let i = 0; i < employees.length; i++) {
+        if (employees[i].id == $(this).data('id')) {
+            employees.splice(i,1);
+        }
+    }
     displayEmployees(employees);
 }
 
@@ -48,7 +52,7 @@ function displayEmployees(arrayToDisplay) {
             <td>${arrayToDisplay[i].id}</td>
             <td>${arrayToDisplay[i].title}</td>
             <td>${arrayToDisplay[i].celery}</td>
-            <td><button class="deleteButton" data-index="${i}">Delete</button></td>
+            <td><button class="deleteButton" data-id="${arrayToDisplay[i].id}">Delete</button></td>
         </tr>
         `);
         totalYearly += Number(arrayToDisplay[i].celery);
